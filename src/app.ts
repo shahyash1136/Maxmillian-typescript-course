@@ -1,44 +1,10 @@
-/* let person: {
-    name: string,
-    age: number,
-    hobbies: string[],
-    role: [number, string]
-} = {
-    name: 'Yash',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author']
-} */
+let userInput: unknown;
+let userName: string;
 
-/* const ADMIN = 0;
-const READ_ONLY = 1;
-const AUTHOR = 2
- */
+userInput = 5;
+userInput = 'Max'
 
-enum Role { ADMIN, READ_ONLY, AUTHOR };
+userName = userInput
 
 
 
-
-let person = {
-    name: 'Yash',
-    age: 30,
-    hobbies: ['Sports', 'Cooking'],
-    role: Role.ADMIN
-}
-
-
-//person.role = [0,'admin']
-
-
-let favActivities: string[];
-favActivities = ['Sports']
-//person.role.push('admin');
-//person.role[1] = 10;
-
-console.log(person.name)
-
-
-if (person.role === Role.ADMIN) {
-    console.log('is admin')
-}
